@@ -3,7 +3,7 @@ import "./Weather.css";
 import Spinner from "react-bootstrap/Spinner";
 import * as utils from "./utils";
 
-const DEBUG = true;
+const DEBUG = false;
 
 function Weather() {
   const [weather, setWeather] = useState({});
