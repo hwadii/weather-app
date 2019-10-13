@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Weather.css";
 import * as utils from "./utils";
 
-const DEBUG = false;
+const DEBUG = true;
 
 function Weather() {
   const [weather, setWeather] = useState({});
