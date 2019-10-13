@@ -1,0 +1,25 @@
+.Weather {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#311847),
+    to(#3eb9e6)
+  );
+  background-image: -webkit-linear-gradient(top, #e7e4e9, #3eb9e6);
+  background-image: -moz-linear-gradient(top, #e7e4e9, #3eb9e6);
+  background-image: linear-gradient(to bottom, #e7e4e9, #3eb9e6);
+}
+
+.Weather-box {
+  font-family: "Abel", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+}
