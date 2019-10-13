@@ -1,4 +1,5 @@
 .Weather {
+  color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,10 +17,83 @@
 }
 
 .Weather-box {
+  height: 100%;
+  width: 100%;
+  position: relative;
   font-family: "Abel", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: aqua;
+  animation: introduction 2s;
+}
+
+.Weather-location {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+}
+
+.Weather-location__size {
+  font-size: 50px;
+  transition: font-size 0.5s;
+}
+
+.Weather-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Weather-temp__size {
+  font-size: 80px;
+  transition: font-size 0.5s;
+}
+
+@keyframes introduction {
+  0% {
+    bottom: -320px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Weather-location__size {
+    font-size: 35px;
+    transition: font-size 0.5s;
+  }
+  .Weather-temp__size {
+    font-size: 50px;
+    transition: font-size 0.5s;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Weather-location__size {
+    font-size: 30px;
+    transition: font-size 0.5s;
+  }
+  .Weather-temp__size {
+    font-size: 45px;
+    transition: font-size 0.5s;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Weather-location__size {
+    font-size: 20px;
+    transition: font-size 0.5s;
+  }
+  .Weather-temp__size {
+    font-size: 35px;
+    transition: font-size 0.5s;
+  }
 }
