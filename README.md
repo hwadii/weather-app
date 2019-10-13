@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is it?
+
+A simple weather app using the Geolocation API and the [Weather API](https://openweathermap.org/api). The app is deployed on Netlify [here](https://wonky-weather.netlify.com/). 
 
 ## Available Scripts
 
