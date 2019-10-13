@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Weather.css";
+import Spinner from "react-bootstrap/Spinner";
 import * as utils from "./utils";
 
 const DEBUG = true;
@@ -63,11 +64,11 @@ function Weather() {
     } else {
       getLocation();
     }
-  });
+  }, [coords]);
 
   return (
     <div className="Weather">
-      {isLoading && <p>Getting weather info...</p>}
+      {isLoading && <Spinner animation="border" />}
       {!isLoading && (
         <div className="Weather-box">
           <div className="Weather-location">
