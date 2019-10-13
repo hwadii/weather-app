@@ -4,24 +4,21 @@
 }
 
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: "Abel", sans-serif;
+  color: white;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#311847),
+    to(#3eb9e6)
+  );
+  background-image: -webkit-linear-gradient(top, #e7e4e9, #3eb9e6);
+  background-image: -moz-linear-gradient(top, #e7e4e9, #3eb9e6);
+  background-image: linear-gradient(to bottom, #e7e4e9, #3eb9e6);
 }
