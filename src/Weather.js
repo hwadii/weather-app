@@ -31,7 +31,7 @@ function Weather() {
   const fetchData = async () => {
     if (!DEBUG) {
       const result = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&APPID=9256a715d51522e13cca79f1290ea644`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&APPID=${process.env.REACT_APP_DEV_API_KEY}`
       );
       const data = await result.json();
       console.log(data);
